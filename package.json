@@ -1,0 +1,7 @@
+{
+  "name": "time_to_answer",
+  "packageManager": "yarn@3.6.4",
+  "dependencies": {
+    "jquery": "^3.7.1"
+  }
+}
