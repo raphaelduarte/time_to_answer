@@ -7,14 +7,20 @@
   <%= link_to 'Fazer logoff', destroy_user_session_path, method: :delete %>
   <% else %>
     <p>Usuário não está logado</p>
+    <p>
+      Faça o login do usuário:<%= link_to 'Fazer login', new_user_session_path %>
+    </p>
 <% end %>
 
 
 <% if admin_signed_in?%>
   <p>Administrador está logado</p>
   <p> <%= current_admin.inspect %></p>
-  <%= link_to 'Logout', destroy_admin_session_path, method: :delete %>
+  <%= link_to 'Logout', destroy_admin_session_path, :method => :delete %>
 
 <% else %>
   <p>Administrador não está logado</p>
+  <p>
+    Faça o login do administrador:<%= link_to 'Fazer Login', admin_session_path %>
+  </p>
 <% end %>
