@@ -1,0 +1,1 @@
+json.partial! "profiles_case_use_pacientes/profiles_case_use_paciente", profiles_case_use_paciente: @profiles_case_use_paciente

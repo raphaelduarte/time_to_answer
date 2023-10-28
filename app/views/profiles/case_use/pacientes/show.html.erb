@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @profiles_case_use_paciente %>
+
+<div>
+  <%= link_to "Edit this paciente", edit_profiles_case_use_paciente_path(@profiles_case_use_paciente) %> |
+  <%= link_to "Back to pacientes", profiles_case_use_pacientes_path %>
+
+  <%= button_to "Destroy this paciente", @profiles_case_use_paciente, method: :delete %>
+</div>

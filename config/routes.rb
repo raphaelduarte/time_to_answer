@@ -1,4 +1,9 @@
 Rails.application.routes.draw do
+  namespace :profiles do
+    namespace :case_use do
+      resources :pacientes
+    end
+  end
   devise_for :admins
   devise_for :users
 
