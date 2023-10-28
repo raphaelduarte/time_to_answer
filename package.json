@@ -1,4 +1,7 @@
 {
   "name": "time_to_answer",
-  "packageManager": "yarn@3.6.4"
+  "packageManager": "yarn@3.6.4",
+  "dependencies": {
+    "bulma": "^0.9.4"
+  }
 }

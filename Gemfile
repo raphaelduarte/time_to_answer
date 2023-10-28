@@ -20,6 +20,11 @@ gem 'i18n'
 #Para instalar o javascript
 gem 'webpacker', '~> 5.0'
 
+#Atualização do json
+gem 'json', '~> 2.3'
+
+#Instalação do Bulma
+gem "bulma-rails", "~> 0.9.4"
 
 # Use the Puma web server [https://github.com/puma/puma]
 gem "puma", ">= 5.0"
