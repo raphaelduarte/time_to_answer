@@ -1,0 +1,12 @@
+<aside class="menu">
+  <ul class="menu-list">
+    <li><%= link_to 'Início', root_path %></li>
+    <li><%= link_to 'Sobre', admin_session_path %></li>
+    <li><%= link_to 'Configurações', admin_session_path %></li>
+    <li><%= link_to 'Lista de Usuários', admin_session_path %></li>
+    <li><%= link_to 'Adicionar Usuário', admin_session_path %></li>
+    <li><%= link_to 'Pagamentos', admin_session_path %></li>
+    <li><%= link_to 'Transferências', admin_session_path %></li>
+    <li><%= link_to 'Logout', destroy_admin_session_path, :method => :delete %></li>
+  </ul>
+</aside>

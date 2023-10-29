@@ -12,36 +12,7 @@
 <body>
   <div class="columns">
     <div class="column is-2 navbar">
-      <aside class="menu">
-        <p class="menu-label">
-          Geral
-        </p>
-        <ul class="menu-list">
-          <li><%= link_to 'Início', root_path %></li>
-          <li><%= link_to 'Sobre', admin_session_path %></li>
-        </ul>
-        <p class="menu-label">
-          Administração
-        </p>
-        <ul class="menu-list">
-          <li><%= link_to 'Configurações', admin_session_path %></li>
-          <li>
-            Usuários
-            <ul>
-              <li><%= link_to 'Lista de Usuários', admin_session_path %></li>
-              <li><%= link_to 'Adicionar Usuário', admin_session_path %></li>
-            </ul>
-          </li>
-        </ul>
-        <p class="menu-label">
-          Transações
-        </p>
-        <ul class="menu-list">
-          <li><%= link_to 'Pagamentos', admin_session_path %></li>
-          <li><%= link_to 'Transferências', admin_session_path %></li>
-          <li><%= link_to 'Logout', destroy_admin_session_path, :method => :delete %></li>
-        </ul>
-      </aside>
+      <%= render "admin_sidebar"%>
     </div>
     <div class="column is-10">
       <%= yield %>
