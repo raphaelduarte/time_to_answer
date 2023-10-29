@@ -26,6 +26,9 @@ gem 'json', '~> 2.3'
 #Instalação do Bulma
 gem "bulma-rails", "~> 0.9.4"
 
+#Instalação do TailwindCss
+gem 'tailwindcss-rails', '~> 2.0', '>= 2.0.32'
+
 # Use the Puma web server [https://github.com/puma/puma]
 gem "puma", ">= 5.0"
 
