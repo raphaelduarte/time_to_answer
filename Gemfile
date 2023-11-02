@@ -24,10 +24,20 @@ gem 'webpacker', '~> 5.0'
 gem 'json', '~> 2.3'
 
 #Instalação do Bulma
-gem "bulma-rails", "~> 0.9.4"
+
+
+#Bootstrap
+gem 'bootstrap', '~> 5.0.2'
 
 #Instalação do TailwindCss
-gem 'tailwindcss-rails', '~> 2.0', '>= 2.0.32'
+
+
+#Instalação da jquery
+gem 'jquery-rails'
+
+#SASS
+gem 'sassc-rails'
+
 
 # Use the Puma web server [https://github.com/puma/puma]
 gem "puma", ">= 5.0"

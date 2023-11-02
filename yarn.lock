@@ -5,10 +5,674 @@ __metadata:
   version: 6
   cacheKey: 8
 
-"bulma@npm:^0.9.4":
+"@creative-tim-official/argon-dashboard-free@npm:^1.2.0":
+  version: 1.2.0
+  resolution: "@creative-tim-official/argon-dashboard-free@npm:1.2.0"
+  dependencies:
+    "@fortawesome/fontawesome-free": ^5.3.1
+    anchor-js: ^4.1.1
+    animate.css: ^3.7.0
+    bootstrap: ^4.1.3
+    bootstrap-datepicker: ^1.8.0
+    bootstrap-notify: ^3.1.3
+    bootstrap-tagsinput: ^0.7.1
+    chart.js: ^2.7.2
+    clipboard: ^2.0.1
+    datatables.net: ^1.10.19
+    datatables.net-bs4: ^1.10.19
+    datatables.net-buttons: ^1.5.4
+    datatables.net-buttons-bs4: ^1.5.4
+    datatables.net-responsive-bs4: ^2.2.3
+    datatables.net-select: ^1.2.7
+    datatables.net-select-bs4: ^1.2.7
+    dropzone: ^5.5.1
+    fullcalendar: ^3.9.0
+    headroom.js: ^0.9.4
+    holderjs: ^2.9.4
+    jquery: ^3.3.1
+    jquery-scroll-lock: ^3.1.3
+    jquery.scrollbar: ^0.2.11
+    js-cookie: ^2.2.0
+    jvectormap-next: ^3.0.0
+    lavalamp: ^1.1.0
+    list.js: ^1.5.0
+    moment: ^2.22.2
+    nouislider: ^11.1.0
+    onscreen: ^1.3.2
+    prismjs: ^1.15.0
+    quill: ^1.3.6
+    select2: ^4.0.6-rc.1
+    sweetalert2: ^7.28.10
+  checksum: aa3e84902ab50988ff7fd39eb247fabc6caa312b06a34ba0a3cb739a61a7808d78740409b128e79561fe87a747ae9ded5a07eeffb8be60cbf329daba16b74982
+  languageName: node
+  linkType: hard
+
+"@fortawesome/fontawesome-free@npm:^5.3.1":
+  version: 5.15.4
+  resolution: "@fortawesome/fontawesome-free@npm:5.15.4"
+  checksum: 32281c3df4075290d9a96dfc22f72fadb3da7055d4117e48d34046b8c98032a55fa260ae351b0af5d6f6fb57a2f5d79a4abe52af456da35195f7cb7dda27b4a2
+  languageName: node
+  linkType: hard
+
+"anchor-js@npm:^4.1.1":
+  version: 4.3.1
+  resolution: "anchor-js@npm:4.3.1"
+  checksum: 6081960166583f9ce2faf0e923a3799bf6cbdae1e077bfb68b3e5dadaee4451f262fb97e6377587c76ad219b330c8656364594104eaf4ca1e99272d0b2cecc88
+  languageName: node
+  linkType: hard
+
+"animate.css@npm:^3.7.0":
+  version: 3.7.2
+  resolution: "animate.css@npm:3.7.2"
+  checksum: 7262dfe8fb7929c5c296b20e2a6d8d302bd80c02cb8ccf4cf751b7b142aea5c013d0b942aada5775991dd87f041f5a023135ba86110a0619ef3001913fb1afec
+  languageName: node
+  linkType: hard
+
+"bootstrap-datepicker@npm:^1.8.0":
+  version: 1.10.0
+  resolution: "bootstrap-datepicker@npm:1.10.0"
+  dependencies:
+    jquery: ">=3.4.0 <4.0.0"
+  checksum: 3f1545545f2052eb44d519d6ec6a8792d34c0285fc6d4f291a3bbee14f1987bb33b51106d9f578dbc1db23d95e51a6878e6fba846e689a938b8e10af57926bd6
+  languageName: node
+  linkType: hard
+
+"bootstrap-notify@npm:^3.1.3":
+  version: 3.1.3
+  resolution: "bootstrap-notify@npm:3.1.3"
+  checksum: 2445d65b54ac8a538a49e3a6dff81187b82baaea89d257025b7b628aca12cc465f1f2a83ec448bff272f2927b01f770150e520609f71b7a31e5f03da298a0ff5
+  languageName: node
+  linkType: hard
+
+"bootstrap-tagsinput@npm:^0.7.1":
+  version: 0.7.1
+  resolution: "bootstrap-tagsinput@npm:0.7.1"
+  checksum: 4dcad989377b655bd3344ec842717e8fdec2fd6205397f5bff65543eb64d0662f1f4e91c2ac1e35cb79803ba5154c330949028bbe94311e8f06dc30a389d46af
+  languageName: node
+  linkType: hard
+
+"bootstrap@npm:^4.1.3":
+  version: 4.6.2
+  resolution: "bootstrap@npm:4.6.2"
+  peerDependencies:
+    jquery: 1.9.1 - 3
+    popper.js: ^1.16.1
+  checksum: 3f4e7768ff7d618c49d4bf4f02aa54a9bfb679d4eecb0f3854fa4af1a17b9114b147009c435946432cdd1572efffc71d88ec385c55943a12fa66253cde0876b0
+  languageName: node
+  linkType: hard
+
+"bootstrap@npm:v5.3.2":
+  version: 5.3.2
+  resolution: "bootstrap@npm:5.3.2"
+  peerDependencies:
+    "@popperjs/core": ^2.11.8
+  checksum: d5580b253d121ffc137388d41da58dce8d15f1ccd574e12f28d4a08e7649ca15e95db645b2b677cb8025bccd446bff04138fc0fe64f8cba0ccc5dc004a8644cf
+  languageName: node
+  linkType: hard
+
+"call-bind@npm:^1.0.2":
+  version: 1.0.5
+  resolution: "call-bind@npm:1.0.5"
+  dependencies:
+    function-bind: ^1.1.2
+    get-intrinsic: ^1.2.1
+    set-function-length: ^1.1.1
+  checksum: 449e83ecbd4ba48e7eaac5af26fea3b50f8f6072202c2dd7c5a6e7a6308f2421abe5e13a3bbd55221087f76320c5e09f25a8fdad1bab2b77c68ae74d92234ea5
+  languageName: node
+  linkType: hard
+
+"chart.js@npm:^2.7.2":
+  version: 2.9.4
+  resolution: "chart.js@npm:2.9.4"
+  dependencies:
+    chartjs-color: ^2.1.0
+    moment: ^2.10.2
+  checksum: cbdc7abe2fa65e4838848e68b035ae6048ebcc512b9057d7cdb6d361e728400d39e3fde75e0b4da815ab43f7890c31787d8f80d4e6ab75a3e80fc75b47cd173c
+  languageName: node
+  linkType: hard
+
+"chartjs-color-string@npm:^0.6.0":
+  version: 0.6.0
+  resolution: "chartjs-color-string@npm:0.6.0"
+  dependencies:
+    color-name: ^1.0.0
+  checksum: 2355bc8e9514b779d0dc057c5ee6707e8166f270531c27287a399d6bfeb0d891b00a6f6c20e764453a062de0de8b298b11d3850fc94c323df66efb4720ece4c7
+  languageName: node
+  linkType: hard
+
+"chartjs-color@npm:^2.1.0":
+  version: 2.4.1
+  resolution: "chartjs-color@npm:2.4.1"
+  dependencies:
+    chartjs-color-string: ^0.6.0
+    color-convert: ^1.9.3
+  checksum: 254d7b2f103980417703331c49fba18877ac797fd9056d79f0d566dc4fd8d41f91b7f63d4b19602462b91110bee2fe0c9fd57266ce871e498ac1c25742fffb11
+  languageName: node
+  linkType: hard
+
+"clipboard@npm:^2.0.1":
+  version: 2.0.11
+  resolution: "clipboard@npm:2.0.11"
+  dependencies:
+    good-listener: ^1.2.2
+    select: ^1.1.2
+    tiny-emitter: ^2.0.0
+  checksum: 413055a6038e43898e0e895216b58ed54fbf386f091cb00188875ef35b186cefbd258acdf4cb4b0ac87cbc00de936f41b45dde9fe1fd1a57f7babb28363b8748
+  languageName: node
+  linkType: hard
+
+"clone@npm:^2.1.1":
+  version: 2.1.2
+  resolution: "clone@npm:2.1.2"
+  checksum: aaf106e9bc025b21333e2f4c12da539b568db4925c0501a1bf4070836c9e848c892fa22c35548ce0d1132b08bbbfa17a00144fe58fccdab6fa900fec4250f67d
+  languageName: node
+  linkType: hard
+
+"color-convert@npm:^1.9.3":
+  version: 1.9.3
+  resolution: "color-convert@npm:1.9.3"
+  dependencies:
+    color-name: 1.1.3
+  checksum: fd7a64a17cde98fb923b1dd05c5f2e6f7aefda1b60d67e8d449f9328b4e53b228a428fd38bfeaeb2db2ff6b6503a776a996150b80cdf224062af08a5c8a3a203
+  languageName: node
+  linkType: hard
+
+"color-name@npm:1.1.3":
+  version: 1.1.3
+  resolution: "color-name@npm:1.1.3"
+  checksum: 09c5d3e33d2105850153b14466501f2bfb30324a2f76568a408763a3b7433b0e50e5b4ab1947868e65cb101bb7cb75029553f2c333b6d4b8138a73fcc133d69d
+  languageName: node
+  linkType: hard
+
+"color-name@npm:^1.0.0":
+  version: 1.1.4
+  resolution: "color-name@npm:1.1.4"
+  checksum: b0445859521eb4021cd0fb0cc1a75cecf67fceecae89b63f62b201cca8d345baf8b952c966862a9d9a2632987d4f6581f0ec8d957dfacece86f0a7919316f610
+  languageName: node
+  linkType: hard
+
+"datatables.net-bs4@npm:>=1.13.4, datatables.net-bs4@npm:^1.10.15, datatables.net-bs4@npm:^1.10.19":
+  version: 1.13.6
+  resolution: "datatables.net-bs4@npm:1.13.6"
+  dependencies:
+    datatables.net: ">=1.13.4"
+    jquery: ">=1.7"
+  checksum: 2554d4c61b3a15ff9113dbe8ada1ff0987faa0c09b5988744754dc177dd88659ddcad8e76d3cd0f5d485f75ebf8c85e9f1a6331a9f32297e2f56a9a4f90c6b75
+  languageName: node
+  linkType: hard
+
+"datatables.net-buttons-bs4@npm:^1.5.4":
+  version: 1.7.1
+  resolution: "datatables.net-buttons-bs4@npm:1.7.1"
+  dependencies:
+    datatables.net-bs4: ^1.10.15
+    datatables.net-buttons: 1.7.1
+    jquery: ">=1.7"
+  checksum: ebe8124433de8ec078b10722548e43590ec880182cd443eac719b31645af538944b832d361184047ff9fa6d5426cd933a25e7af08313879de6a946548810c317
+  languageName: node
+  linkType: hard
+
+"datatables.net-buttons@npm:1.7.1, datatables.net-buttons@npm:^1.5.4":
+  version: 1.7.1
+  resolution: "datatables.net-buttons@npm:1.7.1"
+  dependencies:
+    datatables.net: ^1.10.15
+    jquery: ">=1.7"
+  checksum: 3f176a226bca0708113bf99650edc495982cdebcb60c9c375ba2a808f6fce395c9ebf418ae5e10561a4850f735f83e9413ac3203123991c22f6a0bba63867a2f
+  languageName: node
+  linkType: hard
+
+"datatables.net-responsive-bs4@npm:^2.2.3":
+  version: 2.5.0
+  resolution: "datatables.net-responsive-bs4@npm:2.5.0"
+  dependencies:
+    datatables.net-bs4: ">=1.13.4"
+    datatables.net-responsive: ">=2.4.1"
+    jquery: ">=1.7"
+  checksum: a7edf962c173df15fb8f80c9de93b03ce75191e884b18054c3c61b41921e31ac879aadc44211363bddf0c033bf04089c18d12b87e5bc851bcc38c1b64f9a3c3f
+  languageName: node
+  linkType: hard
+
+"datatables.net-responsive@npm:>=2.4.1":
+  version: 2.5.0
+  resolution: "datatables.net-responsive@npm:2.5.0"
+  dependencies:
+    datatables.net: ">=1.13.4"
+    jquery: ">=1.7"
+  checksum: 27e0eb02fdd96471bdc8e5a1d5ca733d8bd40103ce81f0b045c5846ff15a0e5ef09530bcd43385d4ba39b6f4334f9aae229cb41578e4215df284ba5214bd3b4d
+  languageName: node
+  linkType: hard
+
+"datatables.net-select-bs4@npm:^1.2.7":
+  version: 1.7.0
+  resolution: "datatables.net-select-bs4@npm:1.7.0"
+  dependencies:
+    datatables.net-bs4: ">=1.13.4"
+    datatables.net-select: ">=1.6.2"
+    jquery: ">=1.7"
+  checksum: 73965339953d5cc923b697cfa0cfc3dca25bd688fb733b176ff7090d27a05c1536ec9098033146fc3cc9d1de7ff4b179e9b929ccc41f35af511c29f355ae2935
+  languageName: node
+  linkType: hard
+
+"datatables.net-select@npm:>=1.6.2, datatables.net-select@npm:^1.2.7":
+  version: 1.7.0
+  resolution: "datatables.net-select@npm:1.7.0"
+  dependencies:
+    datatables.net: ">=1.13.4"
+    jquery: ">=1.7"
+  checksum: 6fa93cd2ec18358a86d1d77e01bda1cf30b2bc6460e578a9c18845ba49fc7ad2336192f60747d8464078727c0252452821eb367e7f0c865b49f5f2c3253cf785
+  languageName: node
+  linkType: hard
+
+"datatables.net@npm:>=1.13.4, datatables.net@npm:^1.10.15, datatables.net@npm:^1.10.19":
+  version: 1.13.6
+  resolution: "datatables.net@npm:1.13.6"
+  dependencies:
+    jquery: ">=1.7"
+  checksum: 2c9e4063bd6b2cfeac92e577a34d3a35803fdd5aeb47ca11230584684e20d328f1b0977a12cbe06412d7c8ee451635fba20ad6a6f44c0da07eaba32c909fe0d1
+  languageName: node
+  linkType: hard
+
+"deep-equal@npm:^1.0.1":
+  version: 1.1.1
+  resolution: "deep-equal@npm:1.1.1"
+  dependencies:
+    is-arguments: ^1.0.4
+    is-date-object: ^1.0.1
+    is-regex: ^1.0.4
+    object-is: ^1.0.1
+    object-keys: ^1.1.1
+    regexp.prototype.flags: ^1.2.0
+  checksum: f92686f2c5bcdf714a75a5fa7a9e47cb374a8ec9307e717b8d1ce61f56a75aaebf5619c2a12b8087a705b5a2f60d0292c35f8b58cb1f72e3268a3a15cab9f78d
+  languageName: node
+  linkType: hard
+
+"define-data-property@npm:^1.0.1, define-data-property@npm:^1.1.1":
+  version: 1.1.1
+  resolution: "define-data-property@npm:1.1.1"
+  dependencies:
+    get-intrinsic: ^1.2.1
+    gopd: ^1.0.1
+    has-property-descriptors: ^1.0.0
+  checksum: a29855ad3f0630ea82e3c5012c812efa6ca3078d5c2aa8df06b5f597c1cde6f7254692df41945851d903e05a1668607b6d34e778f402b9ff9ffb38111f1a3f0d
+  languageName: node
+  linkType: hard
+
+"define-properties@npm:^1.1.3, define-properties@npm:^1.2.0":
+  version: 1.2.1
+  resolution: "define-properties@npm:1.2.1"
+  dependencies:
+    define-data-property: ^1.0.1
+    has-property-descriptors: ^1.0.0
+    object-keys: ^1.1.1
+  checksum: b4ccd00597dd46cb2d4a379398f5b19fca84a16f3374e2249201992f36b30f6835949a9429669ee6b41b6e837205a163eadd745e472069e70dfc10f03e5fcc12
+  languageName: node
+  linkType: hard
+
+"delegate@npm:^3.1.2":
+  version: 3.2.0
+  resolution: "delegate@npm:3.2.0"
+  checksum: d943058fe05897228b158cbd1bab05164df28c8f54127873231d6b03b0a5acc1b3ee1f98ac70ccc9b79cd84aa47118a7de111fee2923753491583905069da27d
+  languageName: node
+  linkType: hard
+
+"dropzone@npm:^5.5.1":
+  version: 5.9.3
+  resolution: "dropzone@npm:5.9.3"
+  checksum: 7fe7e32ff188ab38bb3ddd468938ef78c158ce4cada8b2184cdd78a1d52fd961af56f1f0bec11a7881aab6d43d7fc9f9a6dc6addbfbea93c1ad784dbc6444e4d
+  languageName: node
+  linkType: hard
+
+"eventemitter3@npm:^2.0.3":
+  version: 2.0.3
+  resolution: "eventemitter3@npm:2.0.3"
+  checksum: dfbf4a07144afea0712d8e6a7f30ae91beb7c12c36c3d480818488aafa437d9a331327461f82c12dfd60a4fbad502efc97f684089cda02809988b84a23630752
+  languageName: node
+  linkType: hard
+
+"extend@npm:^3.0.2":
+  version: 3.0.2
+  resolution: "extend@npm:3.0.2"
+  checksum: a50a8309ca65ea5d426382ff09f33586527882cf532931cb08ca786ea3146c0553310bda688710ff61d7668eba9f96b923fe1420cdf56a2c3eaf30fcab87b515
+  languageName: node
+  linkType: hard
+
+"fast-diff@npm:1.1.2":
+  version: 1.1.2
+  resolution: "fast-diff@npm:1.1.2"
+  checksum: 2ef726603e22a89ef27225bfaef24c17e3aec188df24da4629d5f012b23a884e09a0c7299ff37a0aec7aa788755bd554f5801f698de4deeffce83308bd11405d
+  languageName: node
+  linkType: hard
+
+"fullcalendar@npm:^3.9.0":
+  version: 3.10.5
+  resolution: "fullcalendar@npm:3.10.5"
+  peerDependencies:
+    jquery: 2 - 3
+    moment: ^2.20.1
+  checksum: a9e8c137624b445eb1fa5489b4097762c2b65b2e1fba623da06cceddfa684b9dd5cf4b79696db3fae817ff6e54536432ea8eca7143172e8bc57d6db7caaaf52a
+  languageName: node
+  linkType: hard
+
+"function-bind@npm:^1.1.2":
+  version: 1.1.2
+  resolution: "function-bind@npm:1.1.2"
+  checksum: 2b0ff4ce708d99715ad14a6d1f894e2a83242e4a52ccfcefaee5e40050562e5f6dafc1adbb4ce2d4ab47279a45dc736ab91ea5042d843c3c092820dfe032efb1
+  languageName: node
+  linkType: hard
+
+"functions-have-names@npm:^1.2.3":
+  version: 1.2.3
+  resolution: "functions-have-names@npm:1.2.3"
+  checksum: c3f1f5ba20f4e962efb71344ce0a40722163e85bee2101ce25f88214e78182d2d2476aa85ef37950c579eb6cf6ee811c17b3101bb84004bb75655f3e33f3fdb5
+  languageName: node
+  linkType: hard
+
+"get-intrinsic@npm:^1.1.3, get-intrinsic@npm:^1.2.1, get-intrinsic@npm:^1.2.2":
+  version: 1.2.2
+  resolution: "get-intrinsic@npm:1.2.2"
+  dependencies:
+    function-bind: ^1.1.2
+    has-proto: ^1.0.1
+    has-symbols: ^1.0.3
+    hasown: ^2.0.0
+  checksum: 447ff0724df26829908dc033b62732359596fcf66027bc131ab37984afb33842d9cd458fd6cecadfe7eac22fd8a54b349799ed334cf2726025c921c7250e7417
+  languageName: node
+  linkType: hard
+
+"good-listener@npm:^1.2.2":
+  version: 1.2.2
+  resolution: "good-listener@npm:1.2.2"
+  dependencies:
+    delegate: ^3.1.2
+  checksum: f39fb82c4e41524f56104cfd2d7aef1a88e72f3f75139115fbdf98cc7d844e0c1b39218b2e83438c6188727bf904ed78c7f0f2feff67b32833bc3af7f0202b33
+  languageName: node
+  linkType: hard
+
+"gopd@npm:^1.0.1":
+  version: 1.0.1
+  resolution: "gopd@npm:1.0.1"
+  dependencies:
+    get-intrinsic: ^1.1.3
+  checksum: a5ccfb8806e0917a94e0b3de2af2ea4979c1da920bc381667c260e00e7cafdbe844e2cb9c5bcfef4e5412e8bf73bab837285bc35c7ba73aaaf0134d4583393a6
+  languageName: node
+  linkType: hard
+
+"has-property-descriptors@npm:^1.0.0":
+  version: 1.0.1
+  resolution: "has-property-descriptors@npm:1.0.1"
+  dependencies:
+    get-intrinsic: ^1.2.2
+  checksum: 2bcc6bf6ec6af375add4e4b4ef586e43674850a91ad4d46666d0b28ba8e1fd69e424c7677d24d60f69470ad0afaa2f3197f508b20b0bb7dd99a8ab77ffc4b7c4
+  languageName: node
+  linkType: hard
+
+"has-proto@npm:^1.0.1":
+  version: 1.0.1
+  resolution: "has-proto@npm:1.0.1"
+  checksum: febc5b5b531de8022806ad7407935e2135f1cc9e64636c3916c6842bd7995994ca3b29871ecd7954bd35f9e2986c17b3b227880484d22259e2f8e6ce63fd383e
+  languageName: node
+  linkType: hard
+
+"has-symbols@npm:^1.0.2, has-symbols@npm:^1.0.3":
+  version: 1.0.3
+  resolution: "has-symbols@npm:1.0.3"
+  checksum: a054c40c631c0d5741a8285010a0777ea0c068f99ed43e5d6eb12972da223f8af553a455132fdb0801bdcfa0e0f443c0c03a68d8555aa529b3144b446c3f2410
+  languageName: node
+  linkType: hard
+
+"has-tostringtag@npm:^1.0.0":
+  version: 1.0.0
+  resolution: "has-tostringtag@npm:1.0.0"
+  dependencies:
+    has-symbols: ^1.0.2
+  checksum: cc12eb28cb6ae22369ebaad3a8ab0799ed61270991be88f208d508076a1e99abe4198c965935ce85ea90b60c94ddda73693b0920b58e7ead048b4a391b502c1c
+  languageName: node
+  linkType: hard
+
+"hasown@npm:^2.0.0":
+  version: 2.0.0
+  resolution: "hasown@npm:2.0.0"
+  dependencies:
+    function-bind: ^1.1.2
+  checksum: 6151c75ca12554565098641c98a40f4cc86b85b0fd5b6fe92360967e4605a4f9610f7757260b4e8098dd1c2ce7f4b095f2006fe72a570e3b6d2d28de0298c176
+  languageName: node
+  linkType: hard
+
+"headroom.js@npm:^0.9.4":
   version: 0.9.4
-  resolution: "bulma@npm:0.9.4"
-  checksum: bc0ab8c203deb0ae200fab5b38547ad4bc8ed1e3abcf6f4ac8a2229af46540419bbcb78c9d2e80f3ddda8825d64fa186ed8775674656cdcabe5544be4d0f3d85
+  resolution: "headroom.js@npm:0.9.4"
+  checksum: d74fb2cba3f6d6b993dc7c38e4c851cccf60204480ffc2bf7917b4b71b05f48595765f5edf54fb5c96a5157d0fbbce8c7136f2b7464cb843fddbb8d70fa98017
+  languageName: node
+  linkType: hard
+
+"holderjs@npm:^2.9.4":
+  version: 2.9.9
+  resolution: "holderjs@npm:2.9.9"
+  checksum: 18e6c42355fa82b99a6bdcb23900dc16abe2885e239cb53e432751359607e912e073dd8357509596b28b93e05eb7eeb502b646b061f9afde0b1df924eeb0fabf
+  languageName: node
+  linkType: hard
+
+"is-arguments@npm:^1.0.4":
+  version: 1.1.1
+  resolution: "is-arguments@npm:1.1.1"
+  dependencies:
+    call-bind: ^1.0.2
+    has-tostringtag: ^1.0.0
+  checksum: 7f02700ec2171b691ef3e4d0e3e6c0ba408e8434368504bb593d0d7c891c0dbfda6d19d30808b904a6cb1929bca648c061ba438c39f296c2a8ca083229c49f27
+  languageName: node
+  linkType: hard
+
+"is-date-object@npm:^1.0.1":
+  version: 1.0.5
+  resolution: "is-date-object@npm:1.0.5"
+  dependencies:
+    has-tostringtag: ^1.0.0
+  checksum: baa9077cdf15eb7b58c79398604ca57379b2fc4cf9aa7a9b9e295278648f628c9b201400c01c5e0f7afae56507d741185730307cbe7cad3b9f90a77e5ee342fc
+  languageName: node
+  linkType: hard
+
+"is-regex@npm:^1.0.4":
+  version: 1.1.4
+  resolution: "is-regex@npm:1.1.4"
+  dependencies:
+    call-bind: ^1.0.2
+    has-tostringtag: ^1.0.0
+  checksum: 362399b33535bc8f386d96c45c9feb04cf7f8b41c182f54174c1a45c9abbbe5e31290bbad09a458583ff6bf3b2048672cdb1881b13289569a7c548370856a652
+  languageName: node
+  linkType: hard
+
+"jquery-scroll-lock@npm:^3.1.3":
+  version: 3.1.3
+  resolution: "jquery-scroll-lock@npm:3.1.3"
+  checksum: 044b4567cf16d72fbb81b907eeac04450524f5886b1a882d5a4ed9578756b1a7b708366f99d0085f1a90eb7420b9fc34a3ffbd0a2b3b17a935cee66c24b4188b
+  languageName: node
+  linkType: hard
+
+"jquery.scrollbar@npm:^0.2.11":
+  version: 0.2.11
+  resolution: "jquery.scrollbar@npm:0.2.11"
+  checksum: c2b07e52dde0d0b84f401fc5c692be1584a9e7c0631258c487b479c4867fda074ba948050763130438c375888d079718519d7216b20542acb10709d09e8c2744
+  languageName: node
+  linkType: hard
+
+"jquery@npm:>=1.7, jquery@npm:>=3.4.0 <4.0.0, jquery@npm:^3.3.1":
+  version: 3.7.1
+  resolution: "jquery@npm:3.7.1"
+  checksum: 4370b8139d6ae82867eb6f7f21d1edccf1d1bdf41c0840920ea80d366c2cd5dbe1ceebb110ee9772aa839b04400faa1572c5c560b507c688ed7b61cea26c0e27
+  languageName: node
+  linkType: hard
+
+"js-cookie@npm:^2.2.0":
+  version: 2.2.1
+  resolution: "js-cookie@npm:2.2.1"
+  checksum: 9b1fb980a1c5e624fd4b28ea4867bb30c71e04c4484bb3a42766344c533faa684de9498e443425479ec68609e96e27b60614bfe354877c449c631529b6d932f2
+  languageName: node
+  linkType: hard
+
+"jvectormap-next@npm:^3.0.0":
+  version: 3.1.1
+  resolution: "jvectormap-next@npm:3.1.1"
+  dependencies:
+    jquery: ">=1.7"
+  checksum: 18da58879f4dea9ed2c0ab786fb480290819ed4137e7b737d45be086b2135652a9e05e09cee8e3d3e95804827f9cf6d0c4b0906b7e39a7232661401c72b775dc
+  languageName: node
+  linkType: hard
+
+"lavalamp@npm:^1.1.0":
+  version: 1.1.0
+  resolution: "lavalamp@npm:1.1.0"
+  dependencies:
+    jquery: ">=1.7"
+  checksum: 777267b5ce44fc7d02413f502ff6e55e4dc5ce077afc8de5e896c9021007b79f0fd59bb2a1d12c849c8f63091806f3b1b799f40f74d206c7ed73084eaa016301
+  languageName: node
+  linkType: hard
+
+"list.js@npm:^1.5.0":
+  version: 1.5.0
+  resolution: "list.js@npm:1.5.0"
+  dependencies:
+    string-natural-compare: ^2.0.2
+  checksum: 12d0b58f6ffc69bb72ee5a0b696a7d6238d864624ab0e449d81210df7e283090d2170cb70066a08b985b113944dfcf50d037e0f206b1159d77b848bb85a5f08c
+  languageName: node
+  linkType: hard
+
+"moment@npm:^2.10.2, moment@npm:^2.22.2":
+  version: 2.29.4
+  resolution: "moment@npm:2.29.4"
+  checksum: 0ec3f9c2bcba38dc2451b1daed5daded747f17610b92427bebe1d08d48d8b7bdd8d9197500b072d14e326dd0ccf3e326b9e3d07c5895d3d49e39b6803b76e80e
+  languageName: node
+  linkType: hard
+
+"nouislider@npm:^11.1.0":
+  version: 11.1.0
+  resolution: "nouislider@npm:11.1.0"
+  checksum: 08e234d31dad48f506b542fca09b3663253afbd47d2c6a0deacf990fe2bffbd35d6ceacbe5c6e7f595b2d37c0e04677c11ce5a570a22ccdb48162ee185a966c0
+  languageName: node
+  linkType: hard
+
+"object-is@npm:^1.0.1":
+  version: 1.1.5
+  resolution: "object-is@npm:1.1.5"
+  dependencies:
+    call-bind: ^1.0.2
+    define-properties: ^1.1.3
+  checksum: 989b18c4cba258a6b74dc1d74a41805c1a1425bce29f6cabb50dcb1a6a651ea9104a1b07046739a49a5bb1bc49727bcb00efd5c55f932f6ea04ec8927a7901fe
+  languageName: node
+  linkType: hard
+
+"object-keys@npm:^1.1.1":
+  version: 1.1.1
+  resolution: "object-keys@npm:1.1.1"
+  checksum: b363c5e7644b1e1b04aa507e88dcb8e3a2f52b6ffd0ea801e4c7a62d5aa559affe21c55a07fd4b1fd55fc03a33c610d73426664b20032405d7b92a1414c34d6a
+  languageName: node
+  linkType: hard
+
+"onscreen@npm:^1.3.2":
+  version: 1.4.0
+  resolution: "onscreen@npm:1.4.0"
+  checksum: 0f5a33c89ccb8d2c8598ea232aab0327af6c9b0794bafb3b7f2d4d82b668586cd57901000383bc318542f8280cf9d1905440d0c110459d40f6c1a0cdb1e15e44
+  languageName: node
+  linkType: hard
+
+"parchment@npm:^1.1.4":
+  version: 1.1.4
+  resolution: "parchment@npm:1.1.4"
+  checksum: 47997567424d1ad8648046091a06b3a5423ed83f9dfa421d7fd93e0032e79aedd8db5499ff55327e08eebd89d8e927704a646f87d45d4bcfe63016aa5a88947d
+  languageName: node
+  linkType: hard
+
+"prismjs@npm:^1.15.0":
+  version: 1.29.0
+  resolution: "prismjs@npm:1.29.0"
+  checksum: 007a8869d4456ff8049dc59404e32d5666a07d99c3b0e30a18bd3b7676dfa07d1daae9d0f407f20983865fd8da56de91d09cb08e6aa61f5bc420a27c0beeaf93
+  languageName: node
+  linkType: hard
+
+"quill-delta@npm:^3.6.2":
+  version: 3.6.3
+  resolution: "quill-delta@npm:3.6.3"
+  dependencies:
+    deep-equal: ^1.0.1
+    extend: ^3.0.2
+    fast-diff: 1.1.2
+  checksum: e62ed339838077841db401da3181bdf559c6667d014a671767788380c5be13a6205603bcdd27445260e6f6b2b5519161e1000023e521e3b2ff087270fa67fef6
+  languageName: node
+  linkType: hard
+
+"quill@npm:^1.3.6":
+  version: 1.3.7
+  resolution: "quill@npm:1.3.7"
+  dependencies:
+    clone: ^2.1.1
+    deep-equal: ^1.0.1
+    eventemitter3: ^2.0.3
+    extend: ^3.0.2
+    parchment: ^1.1.4
+    quill-delta: ^3.6.2
+  checksum: db3e265a8410a4554e50a18cae4ebc0b43a996a776bcf03e26abcadbf617f4db329d49a0fa3ada6a70538a369bbbdc8fa7a66086f194b481914bf1adbab16f8f
+  languageName: node
+  linkType: hard
+
+"regexp.prototype.flags@npm:^1.2.0":
+  version: 1.5.1
+  resolution: "regexp.prototype.flags@npm:1.5.1"
+  dependencies:
+    call-bind: ^1.0.2
+    define-properties: ^1.2.0
+    set-function-name: ^2.0.0
+  checksum: 869edff00288442f8d7fa4c9327f91d85f3b3acf8cbbef9ea7a220345cf23e9241b6def9263d2c1ebcf3a316b0aa52ad26a43a84aa02baca3381717b3e307f47
+  languageName: node
+  linkType: hard
+
+"select2@npm:^4.0.6-rc.1":
+  version: 4.0.13
+  resolution: "select2@npm:4.0.13"
+  checksum: f0e657861e0d135437d763dcfc0e1581ea55d08f4057212b1baf9da2d59406849cb54d6dca9853b5551abe2b5aa06ba2b1712dcadd1f5a42eca053658d13358e
+  languageName: node
+  linkType: hard
+
+"select@npm:^1.1.2":
+  version: 1.1.2
+  resolution: "select@npm:1.1.2"
+  checksum: 4346151e94f226ea6131e44e68e6d837f3fdee64831b756dd657cc0b02f4cb5107f867cb34a1d1216ab7737d0bf0645d44546afb030bbd8d64e891f5e4c4814e
+  languageName: node
+  linkType: hard
+
+"set-function-length@npm:^1.1.1":
+  version: 1.1.1
+  resolution: "set-function-length@npm:1.1.1"
+  dependencies:
+    define-data-property: ^1.1.1
+    get-intrinsic: ^1.2.1
+    gopd: ^1.0.1
+    has-property-descriptors: ^1.0.0
+  checksum: c131d7569cd7e110cafdfbfbb0557249b538477624dfac4fc18c376d879672fa52563b74029ca01f8f4583a8acb35bb1e873d573a24edb80d978a7ee607c6e06
+  languageName: node
+  linkType: hard
+
+"set-function-name@npm:^2.0.0":
+  version: 2.0.1
+  resolution: "set-function-name@npm:2.0.1"
+  dependencies:
+    define-data-property: ^1.0.1
+    functions-have-names: ^1.2.3
+    has-property-descriptors: ^1.0.0
+  checksum: 4975d17d90c40168eee2c7c9c59d023429f0a1690a89d75656306481ece0c3c1fb1ebcc0150ea546d1913e35fbd037bace91372c69e543e51fc5d1f31a9fa126
+  languageName: node
+  linkType: hard
+
+"string-natural-compare@npm:^2.0.2":
+  version: 2.0.3
+  resolution: "string-natural-compare@npm:2.0.3"
+  checksum: e0f22bb0de432f60e2e33f2b10d2fa9dce557cf982337a1475a136cf250535135912ad066c25341fb56d7047ba175bfa76a2351ddabd79089dc9528ca247ff19
+  languageName: node
+  linkType: hard
+
+"sweetalert2@npm:^7.28.10":
+  version: 7.33.1
+  resolution: "sweetalert2@npm:7.33.1"
+  checksum: 10e6368565c2ec56c15749d6dad26e5a3f4a548d84a67a485dfd8b14c6d5d49088354b8adc87af6dac559c434189e769b5aced6b63f2e6504e4c5b02e73cfcef
   languageName: node
   linkType: hard
 
@@ -16,6 +680,14 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "time_to_answer@workspace:."
   dependencies:
-    bulma: ^0.9.4
+    "@creative-tim-official/argon-dashboard-free": ^1.2.0
+    bootstrap: v5.3.2
   languageName: unknown
   linkType: soft
+
+"tiny-emitter@npm:^2.0.0":
+  version: 2.1.0
+  resolution: "tiny-emitter@npm:2.1.0"
+  checksum: fbcfb5145751a0e3b109507a828eb6d6d4501352ab7bb33eccef46e22e9d9ad3953158870a6966a59e57ab7c3f9cfac7cab8521db4de6a5e757012f4677df2dd
+  languageName: node
+  linkType: hard

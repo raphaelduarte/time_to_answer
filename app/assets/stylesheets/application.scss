@@ -12,5 +12,27 @@
  *
  *= require_tree .
  *= require_self
+ *= require argon-dashboard
+
  */
-@import "bulma";
+
+@import "bootstrap";
+// Bootstrap Functions
+@import "argon-dashboard/bootstrap/functions";
+
+// Custom Variables
+@import "argon-dashboard/custom/variables";
+
+// Theme Variables
+@import "argon-dashboard/variables";
+
+// Bootstrap Core
+@import "argon-dashboard/bootstrap/bootstrap";
+
+// Theme Core
+@import "argon-dashboard/theme";
+
+// Custom Variables
+@import "argon-dashboard/custom/styles";
+
+@import "argon-dashboard";
