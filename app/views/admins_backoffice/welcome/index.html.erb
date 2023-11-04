@@ -1,18 +1,41 @@
-<table class="table align-items-center mb-0">
-    <thead>
-    <tr>
-      <th>Administrador</th>
-      <th>Email</th>
-      <th>Senha</th>
-    </tr>
-    </thead>
-  <% @admins.each do |admin| %>
-    <tbody>
-    <tr>
-      <td><%= admin %></td>
-      <td><%= admin.email %></td>
-      <td><%= admin.encrypted_password %></td>
-    </tr>
-    </tbody>
-  <% end %>
-</table>
+
+<div class="card">
+  <div class="table-responsive">
+    <table class="table align-items-center mb-0">
+      <thead>
+      <tr>
+        <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Administrator</th>
+        <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">Email</th>
+        <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">Senha</th>
+        <th></th>
+      </tr>
+      </thead>
+      <% @admins.each do |admin| %>
+      <tbody>
+      <tr>
+        <td>
+          <div class="d-flex px-2">
+            <div>
+              <img src="https://demos.creative-tim.com/soft-ui-design-system-pro/assets/img/logos/small-logos/logo-spotify.svg" class="avatar avatar-sm rounded-circle me-2">
+            </div>
+            <div class="my-auto">
+              <h6 class="mb-0 text-xs"><%= admin %></h6>
+            </div>
+          </div>
+        </td>
+        <td>
+          <p class="text-xs font-weight-bold mb-0"><%= admin.email %></p>
+        </td>
+        <td>
+            <span class="badge badge-dot me-4">
+              <i class="bg-info"></i>
+              <span class="text-dark text-xs"><%= admin.encrypted_password %></span>
+            </span>
+        </td>
+      </tr>
+
+      </tbody>
+      <% end %>
+    </table>
+  </div>
+</div>
