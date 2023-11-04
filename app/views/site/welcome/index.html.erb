@@ -10,132 +10,15 @@
 
 <body>
     <header>
-        <h1>Bem-vindo ao Meu Site!</h1>
-        <nav>
-            <ul>
-              <li><%= link_to 'login', user_session_path %></li>
-                <li><%= link_to 'Sobre', users_backoffice_welcome_index_path %></li>
-                <li><%= link_to 'Contato', admins_backoffice_welcome_index_path %></li>
-            </ul>
-        </nav>
+      <%= render 'site/welcome/header/navBar' %>
     </header>
-
     <main>
-        <section>
-            <h2>Introdução</h2>
-            <p>Este é um exemplo de texto para a página inicial do seu site. Você pode substituir por qualquer informação que desejar.</p>
-        </section>
-
-        <section>
-            <h2>Características</h2>
-            <ul>
-                <li>Design responsivo</li>
-                <li>Links rápidos</li>
-                <li>Conteúdo dinâmico</li>
-            </ul>
-        </section>
+      <%= render 'site/welcome/main/main' %>
     </main>
-
     <footer>
-        <p>© 2023 Meu Site. Todos os direitos reservados.</p>
+      <%= render 'site/welcome/footer/footer' %>
     </footer>
 </body>
-
-<style>
-  
-/* Reset básico para alguns elementos */
-body, h1, h2, p, ul, li {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-
-/* Estilo global */
-body {
-    font-family: 'Arial', sans-serif;
-    line-height: 1.6;
-    background-color: #f4f4f4;
-    color: #333;
-    padding: 20px;
-}
-
-/* Cabeçalho */
-header {
-    background-color: #50b3a2;
-    color: #fff;
-    padding: 20px 0;
-    text-align: center;
-}
-
-nav ul {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-
-nav a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 1.1em;
-    transition: color 0.3s;
-}
-
-nav a:hover {
-    color: #f4f4f4;
-}
-
-/* Conteúdo principal */
-main {
-    max-width: 800px;
-    margin: 40px auto;
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
-}
-
-h2 {
-    border-bottom: 2px solid #50b3a2;
-    padding-bottom: 10px;
-    margin-bottom: 20px;
-    font-size: 1.5em;
-}
-
-ul {
-    margin-top: 20px;
-}
-
-li {
-    margin-bottom: 10px;
-}
-
-/* Rodapé */
-footer {
-    text-align: center;
-    margin-top: 40px;
-    color: #888;
-}
-</style>
-
 </html>
 
-<h1>Site::Welcome#index</h1>
-<p>Find me in app/views/site/welcome/index.html.erb</p>
 
-<% if user_signed_in?%>
-  <p>Usuário está logado</p>
-  <p> <%= current_user.inspect %></p>
-  <%= link_to 'Fazer logoff', destroy_user_session_path, method: :delete %>
-  <% else %>
-    <p>Usuário não está logado</p>
- <% end %>
-
-
-<% if admin_signed_in?%>
-  <p>Administrador está logado</p>
-  <p> <%= current_admin.inspect %></p>
-  <%= link_to 'Logout', destroy_admin_session_path, :method => :delete %>
-
-<% else %>
-  <p>Administrador não está logado</p>
-<% end %>
