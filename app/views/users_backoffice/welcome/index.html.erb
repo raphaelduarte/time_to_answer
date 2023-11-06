@@ -1,6 +1,40 @@
-<h1>UsersBackoffice::Welcome#index</h1>
-<p>Find me in app/views/users_backoffice/welcome/index.html.erb</p>
+<div class="card">
+  <div class="table-responsive">
+    <table class="table align-items-center mb-0">
+      <thead>
+      <tr>
+        <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Administrator</th>
+        <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">Email</th>
+        <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">Senha</th>
+        <th></th>
+      </tr>
+      </thead>
+      <% @users.each do |user| %>
+        <tbody>
+        <tr>
+          <td>
+            <div class="d-flex px-2">
+              <div>
+                <img src="https://demos.creative-tim.com/soft-ui-design-system-pro/assets/img/logos/small-logos/logo-spotify.svg" class="avatar avatar-sm rounded-circle me-2">
+              </div>
+              <div class="my-auto">
+                <h6 class="mb-0 text-xs"><%= user %></h6>
+              </div>
+            </div>
+          </td>
+          <td>
+            <p class="text-xs font-weight-bold mb-0"><%= user.email %></p>
+          </td>
+          <td>
+            <span class="badge badge-dot me-4">
+              <i class="bg-info"></i>
+              <span class="text-dark text-xs"><%= user.encrypted_password %></span>
+            </span>
+          </td>
+        </tr>
 
-<p>
-  <%= link_to 'Logout', destroy_user_session_path, :method => :delete %>
-</p>
+        </tbody>
+      <% end %>
+    </table>
+  </div>
+</div>
