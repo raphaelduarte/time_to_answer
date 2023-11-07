@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Welcomes</h1>
+
+<div id="users_backoffice_pacientes_welcomes">
+  <% @users_backoffice_pacientes_welcomes.each do |users_backoffice_pacientes_welcome| %>
+    <%= render users_backoffice_pacientes_welcome %>
+    <p>
+      <%= link_to "Show this welcome", users_backoffice_pacientes_welcome %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New welcome", new_users_backoffice_pacientes_welcome_path %>

@@ -1,0 +1,1 @@
+json.array! @users_backoffice_pacientes_welcomes, partial: "users_backoffice_pacientes_welcomes/users_backoffice_pacientes_welcome", as: :users_backoffice_pacientes_welcome

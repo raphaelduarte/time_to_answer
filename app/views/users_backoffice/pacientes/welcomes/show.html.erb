@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @users_backoffice_pacientes_welcome %>
+
+<div>
+  <%= link_to "Edit this welcome", edit_users_backoffice_pacientes_welcome_path(@users_backoffice_pacientes_welcome) %> |
+  <%= link_to "Back to welcomes", users_backoffice_pacientes_welcomes_path %>
+
+  <%= button_to "Destroy this welcome", @users_backoffice_pacientes_welcome, method: :delete %>
+</div>

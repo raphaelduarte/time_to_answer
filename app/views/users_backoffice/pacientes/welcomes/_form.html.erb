@@ -1,0 +1,22 @@
+<%= form_with(model: users_backoffice_pacientes_welcome) do |form| %>
+  <% if users_backoffice_pacientes_welcome.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(users_backoffice_pacientes_welcome.errors.count, "error") %> prohibited this users_backoffice_pacientes_welcome from being saved:</h2>
+
+      <ul>
+        <% users_backoffice_pacientes_welcome.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :index, style: "display: block" %>
+    <%= form.text_field :index %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

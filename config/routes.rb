@@ -11,6 +11,9 @@ Rails.application.routes.draw do
     get 'welcome/index'
   end
   namespace :users_backoffice do
+    namespace :pacientes do
+      resources :welcomes
+    end
     get 'welcome/index'
   end
   namespace :admins_backoffice do
