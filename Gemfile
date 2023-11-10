@@ -38,6 +38,9 @@ gem 'jquery-rails'
 #SASS
 gem 'sassc-rails'
 
+#Para consumo de API
+gem 'rest-client', '~> 2.1'
+
 
 # Use the Puma web server [https://github.com/puma/puma]
 gem "puma", ">= 5.0"

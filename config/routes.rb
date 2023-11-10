@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'configuracao/index'
+  resources :enderecos
   namespace :profiles do
     namespace :case_use do
       resources :pacientes
