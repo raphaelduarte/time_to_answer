@@ -1,15 +1,17 @@
+require 'rest-client'
 class EnderecosController < ApplicationController
   before_action :set_endereco, only: %i[ show edit update destroy ]
 
-  require 'rest-client'
-  require 'json'
-  response = RestClient.get "https://brasilapi.com.br/api/cep/v1/#{cep}"
-
-  @cep = JSON.parse(response.body)["cep"]
-  @state = JSON.parse(response.body)["state"]
-  @city = JSON.parse(response.body)["city"]
-  @neighborhood = JSON.parse(response.body)["neighborhood"]
-  @street = JSON.parse(response.body)["street"]
+  def busca_cep
+    if params[:cep]
+      begin
+        @cep_info = AddressAPI.fetch_data(params[:cep])
+      rescue RestClient::ExceptionWithResponse => e
+        flash[:error] = "Erro ao buscar informações do CEP: #{e.message}"
+        redirect_to algum_caminho # Substitua com um caminho relevante
+      end
+    end
+  end
 
   # GET /enderecos or /enderecos.json
   def index

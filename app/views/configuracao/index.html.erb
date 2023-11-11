@@ -35,4 +35,18 @@
     </div>
     <button type="button" class="btn btn-success">Salvar</button>
   </form>
+  <!-- app/views/enderecos/busca_cep.html.erb -->
+  <%= form_with url: enderecos_busca_cep_path, method: :get, local: true do |form| %>
+    <%= form.text_field :cep, placeholder: 'Digite o CEP' %>
+    <%= form.submit 'Buscar' %>
+  <% end %>
+
+  <% if @cep_info.present? %>
+    <p>Rua: <%= @cep_info['street'] %></p>
+    <p>Bairro: <%= @cep_info['neighborhood'] %></p>
+    <p>Cidade: <%= @cep_info['city'] %></p>
+    <p>Estado: <%= @cep_info['state'] %></p>
+    <p>CEP: <%= @cep_info['cep'][0..1] %>.<%= @cep_info['cep'][2..4] %>-<%= @cep_info['cep'][5..7] %></p>
+  <% end %>
+
 </div>

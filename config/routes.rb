@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   get 'configuracao/index'
+  get 'enderecos/busca_cep', to: 'enderecos#busca_cep'
   resources :enderecos
   namespace :profiles do
     namespace :case_use do
@@ -21,6 +22,8 @@ Rails.application.routes.draw do
   namespace :admins_backoffice do
     get 'welcome/index'
   end
+
+
 
   get 'inicio', to: 'site/welcome#index'
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
