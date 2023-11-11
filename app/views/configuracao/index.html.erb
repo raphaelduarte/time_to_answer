@@ -4,49 +4,32 @@
 </div>
 <div>
   <h2>Endereço do meu consultório</h2>
-  <form>
-    <div class="form-group">
-      <input
-        class="form-control"
-        type="number"
-        id="example-tel-input"
-        placeholder="DDD">
 
-      <input
-        class="form-control"
-        type="number"
-        id="example-tel-input"
-        placeholder="Whatsapp">
-    </div>
+  <!-- app/views/enderecos/index.html.erb -->
+
+  <%= form_with url: services_addressAPI_path	, method: :post, local: true do |form| %>
     <div class="form-group">
-      <input class="form-control" type="text" id="example-text-input" placeholder="Logradouro">
+      <%= form.text_field :cep, class: 'form-control', placeholder: 'CEP', type: 'text' %>
     </div>
-    <div class="form-group">
-      <input class="form-control" type="number" id="example-number-input" placeholder="Número">
-    </div>
-    <div class="form-group">
-      <input class="form-control" type="text" id="example-text-input" placeholder="Bairro">
-    </div>
-    <div class="form-group">
-      <input class="form-control" type="text" id="example-text-input" placeholder="Cidade">
-    </div>
-    <div class="form-group">
-      <input class="form-control" type="text" id="example-text-input" placeholder="Estado">
-    </div>
-    <button type="button" class="btn btn-success">Salvar</button>
-  </form>
-  <!-- app/views/enderecos/busca_cep.html.erb -->
-  <%= form_with url: enderecos_busca_cep_path, method: :get, local: true do |form| %>
-    <%= form.text_field :cep, placeholder: 'Digite o CEP' %>
-    <%= form.submit 'Buscar' %>
+    <%= form.submit 'Buscar endereço', class: 'btn btn-primary' %>
   <% end %>
 
-  <% if @cep_info.present? %>
-    <p>Rua: <%= @cep_info['street'] %></p>
-    <p>Bairro: <%= @cep_info['neighborhood'] %></p>
-    <p>Cidade: <%= @cep_info['city'] %></p>
-    <p>Estado: <%= @cep_info['state'] %></p>
-    <p>CEP: <%= @cep_info['cep'][0..1] %>.<%= @cep_info['cep'][2..4] %>-<%= @cep_info['cep'][5..7] %></p>
+  <% if @endereco_formatado.present? %>
+    <form class="enderecoUserForm">
+      <div class="form-group">
+        <input class="form-control" type="text" id="logradouro-input" placeholder="Logradouro" value="<%= @endereco_formatado[:street] %>">
+      </div>
+      <div class="form-group">
+        <input class="form-control" type="text" id="bairro-input" placeholder="Bairro" value="<%= @endereco_formatado[:neighborhood] %>">
+      </div>
+      <div class="form-group">
+        <input class="form-control" type="text" id="cidade-input" placeholder="Cidade" value="<%= @endereco_formatado[:city] %>">
+      </div>
+      <div class="form-group">
+        <input class="form-control" type="text" id="estado-input" placeholder="Estado" value="<%= @endereco_formatado[:state] %>">
+      </div>
+      <button type="submit" class="btn btn-success">Salvar</button>
+    </form>
   <% end %>
 
 </div>

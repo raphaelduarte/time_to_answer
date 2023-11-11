@@ -1,17 +1,9 @@
 require 'rest-client'
+require 'json'
 class EnderecosController < ApplicationController
   before_action :set_endereco, only: %i[ show edit update destroy ]
 
-  def busca_cep
-    if params[:cep]
-      begin
-        @cep_info = AddressAPI.fetch_data(params[:cep])
-      rescue RestClient::ExceptionWithResponse => e
-        flash[:error] = "Erro ao buscar informações do CEP: #{e.message}"
-        redirect_to algum_caminho # Substitua com um caminho relevante
-      end
-    end
-  end
+
 
   # GET /enderecos or /enderecos.json
   def index
@@ -24,12 +16,7 @@ class EnderecosController < ApplicationController
 
   # GET /enderecos/new
   def new
-    @endereco = Endereco.new(
-      logradouro: @street,
-      numero: @number,
-      bairro: @neighborhood,
-      cidade: @city,
-      estado: @state)
+    @endereco = Endereco.new()
   end
 
   # GET /enderecos/1/edit
@@ -82,6 +69,6 @@ class EnderecosController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def endereco_params
-      params.require(:endereco).permit(:street, :neighborhood, :city, :state, :number)
+      params.require(:endereco).permit(:street, :neighborhood, :city, :state, :number, :cep)
     end
 end

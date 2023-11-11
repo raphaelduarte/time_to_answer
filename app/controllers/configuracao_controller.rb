@@ -3,5 +3,7 @@ class ConfiguracaoController < ApplicationController
   layout 'user_backoffice'
 
   def index
+    dataJson = AddressAPI.fetch_data(params[:cep])
+    @endereco_formatado = AddressAPI.format_endereco(dataJson)
   end
 end
