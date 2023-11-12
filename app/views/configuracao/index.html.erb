@@ -14,22 +14,27 @@
     <%= form.submit 'Buscar endereço', class: 'btn btn-primary' %>
   <% end %>
 
-  <% if @endereco_formatado.present? %>
+
     <form class="enderecoUserForm">
-      <div class="form-group">
-        <input class="form-control" type="text" id="logradouro-input" placeholder="Logradouro" value="<%= @endereco_formatado[:street] %>">
-      </div>
-      <div class="form-group">
-        <input class="form-control" type="text" id="bairro-input" placeholder="Bairro" value="<%= @endereco_formatado[:neighborhood] %>">
-      </div>
-      <div class="form-group">
-        <input class="form-control" type="text" id="cidade-input" placeholder="Cidade" value="<%= @endereco_formatado[:city] %>">
-      </div>
-      <div class="form-group">
-        <input class="form-control" type="text" id="estado-input" placeholder="Estado" value="<%= @endereco_formatado[:state] %>">
-      </div>
-      <button type="submit" class="btn btn-success">Salvar</button>
+    <% if @endereco_formatado.present? %>
+        <div class="form-group">
+          <input class="form-control" type="text" id="logradouro-input" placeholder="Logradouro" value="<%= @endereco_formatado['street'] %>">
+        </div>
+        <div class="form-group">
+          <input class="form-control" type="number" id="numero-input" placeholder="Número" value="number">
+        </div>
+        <div class="form-group">
+          <input class="form-control" type="text" id="bairro-input" placeholder="Bairro" value="<%= @endereco_formatado['neighborhood'] %>">
+        </div>
+        <div class="form-group">
+          <input class="form-control" type="text" id="cidade-input" placeholder="Cidade" value="<%= @endereco_formatado['city'] %>">
+        </div>
+        <div class="form-group">
+          <input class="form-control" type="text" id="estado-input" placeholder="Estado" value="<%= @endereco_formatado['state'] %>">
+        </div>
+        <button type="submit" class="btn btn-success">Salvar</button>
+    <% end %>
     </form>
-  <% end %>
+
 
 </div>

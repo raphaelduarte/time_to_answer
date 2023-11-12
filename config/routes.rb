@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   get 'configuracao/index'
-  post 'services/addressAPI', to: 'enderecos#busca_cep'
+  post 'services/addressAPI', to: 'configuracao#busca_cep'
   resources :enderecos
   namespace :profiles do
     namespace :case_use do
