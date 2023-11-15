@@ -11,12 +11,23 @@
     <div class="form-group">
       <%= form.text_field :cep, class: 'form-control', placeholder: 'CEP', type: 'text' %>
     </div>
+    <div class="form-check mb-3">
+      <%= form.radio_button :tipo_hab, 'Apartamento', id: 'apartamento', class: 'form-check-input', name: 'flexRadioDefault'%>
+      <%= label_tag :apartamento, 'Apartamento'%>
+    </div>
+
+    <div class="form-check">
+      <%= form.radio_button :tipo_hab, 'Casa', id: 'casa', class: 'form-check-input', name: 'flexRadioDefault'%>
+      <%= label_tag :casa, 'Casa' %>
+    </div>
     <%= form.submit 'Buscar endereço', class: 'btn btn-primary' %>
   <% end %>
 
-
-    <form class="enderecoUserForm">
     <% if @endereco_formatado.present? %>
+        <% if @ap == 'Apartamento' %>
+          <%= render 'enderecos/apartamento' %>
+        <% end %>
+
         <div class="form-group">
           <input class="form-control" type="text" id="logradouro-input" placeholder="Logradouro" value="<%= @endereco_formatado['street'] %>">
         </div>
@@ -32,9 +43,13 @@
         <div class="form-group">
           <input class="form-control" type="text" id="estado-input" placeholder="Estado" value="<%= @endereco_formatado['state'] %>">
         </div>
+
+        <div>
+
+        </div>
         <button type="submit" class="btn btn-success">Salvar</button>
     <% end %>
-    </form>
+
 
 
 </div>
