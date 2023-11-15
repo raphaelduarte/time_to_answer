@@ -3,53 +3,49 @@
   <p>Nessa parte, você irá completar as informações e configurações gerais do seu consultório</p>
 </div>
 <div>
-  <h2>Endereço do meu consultório</h2>
 
-  <!-- app/views/enderecos/index.html.erb -->
+    <h2>Endereço do meu consultório</h2>
 
-  <%= form_with url: services_addressAPI_path	, method: :post, local: true do |form| %>
-    <div class="form-group">
-      <%= form.text_field :cep, class: 'form-control', placeholder: 'CEP', type: 'text' %>
-    </div>
-    <div class="form-check mb-3">
-      <%= form.radio_button :tipo_hab, 'Apartamento', id: 'apartamento', class: 'form-check-input', name: 'flexRadioDefault'%>
-      <%= label_tag :apartamento, 'Apartamento'%>
-    </div>
+    <!-- app/views/enderecos/index.html.erb -->
 
-    <div class="form-check">
-      <%= form.radio_button :tipo_hab, 'Casa', id: 'casa', class: 'form-check-input', name: 'flexRadioDefault'%>
-      <%= label_tag :casa, 'Casa' %>
-    </div>
-    <%= form.submit 'Buscar endereço', class: 'btn btn-primary' %>
-  <% end %>
+    <%= form_with url: services_addressAPI_path	, method: :post, local: true do |form| %>
+      <div class="form-group">
+        <%= form.text_field :cep, class: 'form-control', placeholder: 'CEP', type: 'text' %>
+      </div>
+      <div class="form-check mb-3">
+        <%= form.radio_button :tipo_hab, 'Apartamento', id: 'apartamento', class: 'form-check-input', name: 'flexRadioDefault'%>
+        <%= label_tag :apartamento, 'Apartamento'%>
+      </div>
 
-    <% if @endereco_formatado.present? %>
-        <% if @ap == 'Apartamento' %>
-          <%= render 'enderecos/apartamento' %>
-        <% end %>
-
-        <div class="form-group">
-          <input class="form-control" type="text" id="logradouro-input" placeholder="Logradouro" value="<%= @endereco_formatado['street'] %>">
-        </div>
-        <div class="form-group">
-          <input class="form-control" type="number" id="numero-input" placeholder="Número" value="number">
-        </div>
-        <div class="form-group">
-          <input class="form-control" type="text" id="bairro-input" placeholder="Bairro" value="<%= @endereco_formatado['neighborhood'] %>">
-        </div>
-        <div class="form-group">
-          <input class="form-control" type="text" id="cidade-input" placeholder="Cidade" value="<%= @endereco_formatado['city'] %>">
-        </div>
-        <div class="form-group">
-          <input class="form-control" type="text" id="estado-input" placeholder="Estado" value="<%= @endereco_formatado['state'] %>">
-        </div>
-
-        <div>
-
-        </div>
-        <button type="submit" class="btn btn-success">Salvar</button>
+      <div class="form-check">
+        <%= form.radio_button :tipo_hab, 'Casa', id: 'casa', class: 'form-check-input', name: 'flexRadioDefault'%>
+        <%= label_tag :casa, 'Casa' %>
+      </div>
+      <%= form.submit 'Buscar endereço', class: 'btn btn-primary' %>
     <% end %>
 
+    <% if @endereco_formatado.present? %>
+      <% if @ap == 'Apartamento' %>
+        <%= render 'enderecos/apartamento' %>
+      <% end %>
 
+      <%= render 'enderecos/endereco_bloco' %>
 
+    <% end %>
+
+    <h2>Whatsapp do meu consultório</h2>
+    <div class="form-group">
+      <label for="example-tel-input" class="form-control-label">Whatsapp</label>
+      <input class="form-control" type="number" placeholder="(ddd) - xxxxx-xxxx" id="tel-input">
+    </div>
+
+  <h2>Responsável pelo consultório</h2>
+  <div class="form-group">
+    <label for="example-tel-input" class="form-control-label">Nome</label>
+    <input class="form-control" type="text" placeholder="Nome do responsável" id="firstName-responsible-input">
+    <label for="example-tel-input" class="form-control-label">Sobrenome</label>
+    <input class="form-control" type="text" placeholder="Sobrenome do responsável" id="lastName-responsible-input">
+  </div>
+
+  <button type="submit" class="btn btn-success">Salvar</button>
 </div>
