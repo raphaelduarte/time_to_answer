@@ -1,0 +1,27 @@
+<%= form_with(model: telefone) do |form| %>
+  <% if telefone.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(telefone.errors.count, "error") %> prohibited this telefone from being saved:</h2>
+
+      <ul>
+        <% telefone.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :ddd, style: "display: block" %>
+    <%= form.number_field :ddd %>
+  </div>
+
+  <div>
+    <%= form.label :telefone, style: "display: block" %>
+    <%= form.number_field :telefone %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

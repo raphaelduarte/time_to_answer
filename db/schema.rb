@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.1].define(version: 2023_11_10_210534) do
+ActiveRecord::Schema[7.1].define(version: 2023_11_17_004550) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -26,6 +26,12 @@ ActiveRecord::Schema[7.1].define(version: 2023_11_10_210534) do
     t.index ["reset_password_token"], name: "index_admins_on_reset_password_token", unique: true
   end
 
+  create_table "emails", force: :cascade do |t|
+    t.string "email"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "enderecos", force: :cascade do |t|
     t.string "street"
     t.string "neighborhood"
@@ -36,7 +42,21 @@ ActiveRecord::Schema[7.1].define(version: 2023_11_10_210534) do
     t.datetime "updated_at", null: false
   end
 
+  create_table "nomes", force: :cascade do |t|
+    t.string "nome"
+    t.string "sobrenome"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "profiles_case_use_pacientes", force: :cascade do |t|
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "telefones", force: :cascade do |t|
+    t.integer "ddd"
+    t.integer "telefone"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

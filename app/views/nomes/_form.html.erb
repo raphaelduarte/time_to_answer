@@ -1,0 +1,27 @@
+<%= form_with(model: nome) do |form| %>
+  <% if nome.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(nome.errors.count, "error") %> prohibited this nome from being saved:</h2>
+
+      <ul>
+        <% nome.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :nome, style: "display: block" %>
+    <%= form.text_field :nome %>
+  </div>
+
+  <div>
+    <%= form.label :sobrenome, style: "display: block" %>
+    <%= form.text_field :sobrenome %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

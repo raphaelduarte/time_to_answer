@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  resources :emails
+  resources :nomes
+  resources :telefones
   get 'configuracao/index'
   post 'services/addressAPI', to: 'configuracao#busca_cep'
   get 'services/selectApHouse', to: 'configuracao#casa_ap'

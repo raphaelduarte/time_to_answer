@@ -1,0 +1,19 @@
+<h2>Endereço do meu consultório</h2>
+
+<!-- app/views/enderecos/index.html.erb -->
+
+<%= form_with url: services_addressAPI_path	, method: :post, local: true do |form| %>
+  <div class="form-group">
+    <%= form.text_field :cep, class: 'form-control', placeholder: 'CEP', type: 'text' %>
+  </div>
+  <div class="form-check mb-3">
+    <%= form.radio_button :tipo_hab, 'Apartamento', id: 'apartamento', class: 'form-check-input', name: 'flexRadioDefault'%>
+    <%= label_tag :apartamento, 'Apartamento'%>
+  </div>
+
+  <div class="form-check">
+    <%= form.radio_button :tipo_hab, 'Casa', id: 'casa', class: 'form-check-input', name: 'flexRadioDefault'%>
+    <%= label_tag :casa, 'Casa' %>
+  </div>
+  <%= form.submit 'Buscar endereço', class: 'btn btn-primary' %>
+<% end %>

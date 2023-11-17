@@ -4,25 +4,7 @@
 </div>
 <div>
 
-    <h2>Endereço do meu consultório</h2>
-
-    <!-- app/views/enderecos/index.html.erb -->
-
-    <%= form_with url: services_addressAPI_path	, method: :post, local: true do |form| %>
-      <div class="form-group">
-        <%= form.text_field :cep, class: 'form-control', placeholder: 'CEP', type: 'text' %>
-      </div>
-      <div class="form-check mb-3">
-        <%= form.radio_button :tipo_hab, 'Apartamento', id: 'apartamento', class: 'form-check-input', name: 'flexRadioDefault'%>
-        <%= label_tag :apartamento, 'Apartamento'%>
-      </div>
-
-      <div class="form-check">
-        <%= form.radio_button :tipo_hab, 'Casa', id: 'casa', class: 'form-check-input', name: 'flexRadioDefault'%>
-        <%= label_tag :casa, 'Casa' %>
-      </div>
-      <%= form.submit 'Buscar endereço', class: 'btn btn-primary' %>
-    <% end %>
+    <%= render 'enderecos/endereco_consultorio' %>
 
     <% if @endereco_formatado.present? %>
       <% if @ap == 'Apartamento' %>
@@ -33,19 +15,10 @@
 
     <% end %>
 
-    <h2>Whatsapp do meu consultório</h2>
-    <div class="form-group">
-      <label for="example-tel-input" class="form-control-label">Whatsapp</label>
-      <input class="form-control" type="number" placeholder="(ddd) - xxxxx-xxxx" id="tel-input">
-    </div>
+    <%= render 'telefones/telefone_bloco' %>
 
-  <h2>Responsável pelo consultório</h2>
-  <div class="form-group">
-    <label for="example-tel-input" class="form-control-label">Nome</label>
-    <input class="form-control" type="text" placeholder="Nome do responsável" id="firstName-responsible-input">
-    <label for="example-tel-input" class="form-control-label">Sobrenome</label>
-    <input class="form-control" type="text" placeholder="Sobrenome do responsável" id="lastName-responsible-input">
-  </div>
+  <%= render 'nomes/nomes_bloco' %>
+  <%= render 'emails/email_bloco' %>
 
   <button type="submit" class="btn btn-success">Salvar</button>
 </div>

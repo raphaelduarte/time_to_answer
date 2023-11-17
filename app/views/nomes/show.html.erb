@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @nome %>
+
+<div>
+  <%= link_to "Edit this nome", edit_nome_path(@nome) %> |
+  <%= link_to "Back to nomes", nomes_path %>
+
+  <%= button_to "Destroy this nome", @nome, method: :delete %>
+</div>
